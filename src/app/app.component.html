@@ -1,0 +1,5 @@
+<div>
+    <input type="text" [(ngModel)]="postfixExpression" placeholder="Enter postfix expression">
+    <button (click)="evaluatePostfix()">Evaluate</button>
+    <p *ngIf="result !== ''">Result: {{ result }}</p>
+</div>
